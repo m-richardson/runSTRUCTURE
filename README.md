@@ -42,7 +42,7 @@ run this from within the directory containing your mainparams, extraparams and i
 it will create an output directory for each K containing the results
 
 
-#Mark Richardson (email m.richardson@deakin.edu.au)
+Mark Richardson (email m.richardson@deakin.edu.au)
 
 
 
