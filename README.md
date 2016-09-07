@@ -1,6 +1,6 @@
 # runSTRUCTURE
 
-This program is a small wrapper script to automate [STRUCTURE](http://pritchardlab.stanford.edu/structure.html) across any number of K, with multiple iterations per K on a SGE cluster
+This program is a small BASH wrapper script to automate [STRUCTURE](http://pritchardlab.stanford.edu/structure.html) across any number of K, with multiple iterations per K on a SGE cluster
 
 ## Download 
 
@@ -8,7 +8,7 @@ This program is a small wrapper script to automate [STRUCTURE](http://pritchardl
 
 ## Disclamer 
 
-This program works well for a specific type of data; it has been built to work on the SGE cluster at Deakin University. You may have to change certain lines of code to get it to work on your cluster. It will work on a single machine if you uncomment the code at the bottom of the script - please remember to comment out the first nested while loops. 
+This program works well for a specific type of data; it has been built to work on the SGE cluster at Deakin University. You may have to change certain lines of code to get it to work on your cluster. It will work on a single machine if you uncomment the code at the bottom of the script - please remember to comment out the first nested while loops. You will need to produce the mainparams and extraparmas files required by [STRUCTURE](http://pritchardlab.stanford.edu/structure.html) and edit them according to your analysis requirements.
 
 ## Pre-requisite programs
 
