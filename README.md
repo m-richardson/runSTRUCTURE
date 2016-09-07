@@ -28,11 +28,16 @@ This program will run multiple STRUCTURE jobs for different values of K on a SGE
 
 SPECIFY:
 
-max_K = highest value of K to run STRUCTURE for.
+max_K = highest value of K to run STRUCTURE for
+
 iterations = number of iterations per K
+
 mainparams = the mainparams file for STRUCTURE 	
+
 extraparams = extraparams file for STRUCTURE
+
 output_directory = the output directory name
+
 input_file = input STRUCTURE file
 
 IMPORTANT:
