@@ -58,10 +58,10 @@ if [ "X" = "X$6" ]; then
 
 LIMIT=$(($1-1))  
 ITER=$(($2-1))
-mp=$3
-ep=$4
-out=$5
-in=$6
+MP=$3
+EP=$4
+OUT=$5
+DATA=$6
 
 echo
 echo "Running K for K=1 through K=$1"
@@ -77,15 +77,24 @@ while [ $a -le "$LIMIT" ];do
 		b=$(($b+1))
 		echo '#!/bin/bash' > temp.sh
 		echo 'source ~/.bash_profile' >> temp.sh
-		echo mkdir $out'_'$a >> temp.sh
-		echo structure -m $mp -e $ep -i $in -K $a -o $out'_'$a'/results_'$a'_'$b'.txt' >> temp.sh
+		echo mkdir $OUT'_'$a >> temp.sh
+		echo structure -m $MP -e $EP -i $DATA -K $a -o $OUT'_'$a'/results_'$a'_'$b'.txt' >> temp.sh
 		qsub -l qname=Virtual temp.sh 
 		#cat temp.sh
 		rm temp.sh
 	done
-	
-
 done 
 
+#while [ $a -le "$LIMIT" ];do
+#	a=$(($a+1))
+#	echo "Running K=$a"
+#	b=0
+#	while [ $b -le "$ITER" ];do
+#		b=$(($b+1))
+#		echo "Running K=$a iteration $b"
+#		mkdir $OUT'_'$a >> temp.sh
+#		structure -m $MP -e $EP -i $DATA -K $a -o $OUT'_'$a'/results_'$a'_'$b'.txt'
+#	done
+#done 
 
 
