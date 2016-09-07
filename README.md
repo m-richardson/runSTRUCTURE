@@ -23,8 +23,7 @@ This program works well for a specific type of data; it has been built to work o
 ## Detailed usage
 
     runSTRUCTURE max_K iterations mainparams_file extraparams_file output_directory input_file	
-
-This program will run multiple STRUCTURE jobs for different values of K on a SGE cluster
+    
 
 SPECIFY:
 
@@ -40,10 +39,11 @@ output_directory = the output directory name
 
 input_file = input STRUCTURE file
 
+
 IMPORTANT:
 
-make sure the STRUCTURE binary is in your PATH i.e. in ~/.bash_profile
-run from within the directory containing your mainparams, extraparams and input.str files
-it will create an output directory for each K containing the results
+make sure the STRUCTURE binary is in your PATH (i.e. in ~/.bash_profile). It works best when you run it from within the directory containing your mainparams, extraparams and input.str files. You dont need to do this as long as you specify the full path to those files. It will create an output directory for each K which contains the results for each of the different iterations.
+
+Have fun and enjoy.
 
 Mark Richardson (email m.richardson@deakin.edu.au)
